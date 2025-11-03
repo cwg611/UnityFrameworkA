@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">anycpu</Platform>
+    <ProjectGuid>{E461BAE8-B218-4AAE-8773-0C18C85110E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HotUpdateScripts</RootNamespace>
+    <AssemblyName>HotUpdateScripts</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <Description>JEngine</Description>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|anycpu' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Assets\HotUpdateResources\Dll\Hidden~</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|anycpu' ">
+    <Optimize>true</Optimize>
+    <OutputPath>..\Assets\HotUpdateResources\Dll\Hidden~</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="JEngine\Core\ProtoTypeRegister.cs" />
+    <Compile Include="JEngine\Core\JSaver.cs" />
+    <Compile Include="JEngine\Core\JObjectPool.cs" />
+    <Compile Include="JEngine\Core\JBehaviour.cs" />
+    <Compile Include="JEngine\Core\JResource.cs" />
+    <Compile Include="JEngine\Core\JAction.cs" />
+    <Compile Include="JEngine\Core\StringifyHelper.cs" />
+    <Compile Include="JEngine\Core\JPrefab.cs" />
+    <Compile Include="JEngine\UI\UIKit\UIUtility.cs" />
+    <Compile Include="JEngine\UI\UIKit\UIManager\APanelBase.cs" />
+    <Compile Include="JEngine\UI\UIKit\UIManager\UIMgr.cs" />
+    <Compile Include="JEngine\UI\UIKit\UIManager\AItemBase.cs" />
+    <Compile Include="JEngine\UI\UIKit\UIManager\UIPanel\UIReleaseControl.cs" />
+    <Compile Include="JEngine\UI\ResKit\LoadResMgr.cs" />
+    <Compile Include="JEngine\UI\ResKit\AResRefer.cs" />
+    <Compile Include="JEngine\UI\ResKit\GameResMgr.cs" />
+    <Compile Include="JEngine\UI\ResKit\ReferInfo.cs" />
+    <Compile Include="JEngine\UI\ResKit\AssetTaskNode.cs" />
+    <Compile Include="JEngine\UI\ResKit\ResPath.cs" />
+    <Compile Include="JEngine\UI\ResKit\UIResRefer.cs" />
+    <Compile Include="JEngine\UI\JUI.cs" />
+    <Compile Include="JEngine\Core\Singleton.cs" />
+    <Compile Include="JEngine\UI\UIKit\UIExpand\UIGroup.cs" />
+    <Compile Include="JEngine\UI\UIRootView.cs" />
+    <Compile Include="JEngine\Event\JEvent.cs" />
+    <Compile Include="JEngine\Event\EventEnum.cs" />
+    <Compile Include="JEngine\Event\EventAttributes.cs" />
+    <Compile Include="JEngine\Core\JExtensions.cs" />
+    <Compile Include="JEngine\Net\JWebSocket.cs" />
+    <Compile Include="JEngine\Examples\Core\AutoBindDemo.cs" />
+    <Compile Include="JEngine\Examples\Core\ConvertDemo.cs" />
+    <Compile Include="JEngine\Examples\Core\CrossDomainDemo.cs" />
+    <Compile Include="JEngine\Examples\Core\InstantiateDemo.cs" />
+    <Compile Include="JEngine\Examples\Core\JBehaviourExample.cs" />
+    <Compile Include="JEngine\Examples\Core\JSaverExample.cs" />
+    <Compile Include="JEngine\Examples\Data\DataClass.cs" />
+    <Compile Include="JEngine\Examples\Data\SafeData.cs" />
+    <Compile Include="JEngine\Examples\Event\EventDemo.cs" />
+    <Compile Include="JEngine\Examples\Net\JWebSocketDemo.cs" />
+    <Compile Include="JEngine\Examples\UI\JUIExample.cs" />
+    <Compile Include="JEngine\Examples\UI\JumpToUIDemo.cs" />
+    <Compile Include="JEngine\Examples\UI\View\JBtnView.cs" />
+    <Compile Include="JEngine\Examples\UI\View\JTestItem.cs" />
+    <Compile Include="JEngine\Examples\UI\View\JTestView.cs" />
+    <Compile Include="JEngine\Examples\Core\ComplexLitJsonDemo.cs" />
+    <Compile Include="JEngine\Examples\Data\HotData.cs" />
+    <Compile Include="JEngine\Examples\Core\ProtobufDemo.cs" />
+    <Compile Include="Project\ACommon\AudioConfig.cs" />
+    <Compile Include="Project\ACommon\AudioMgr.cs" />
+    <Compile Include="Project\ACommon\BroadCastComponent.cs" />
+    <Compile Include="Project\ACommon\CoroutineMgr.cs" />
+    <Compile Include="Project\ACommon\DataMgr.cs" />
+    <Compile Include="Project\ACommon\DOTweenMgr.cs" />
+    <Compile Include="Project\ACommon\Debug.cs" />
+    <Compile Include="Project\ACommon\BroadCastComponent.cs" />
+    <Compile Include="Project\ACommon\CarouselComponent.cs" />
+    <Compile Include="Project\ACommon\BulletScreenComponent.cs" />
+    <Compile Include="Project\ACommon\ItemList.cs" />
+    <Compile Include="Project\ACommon\IrregularTableView.cs" />
+    <Compile Include="Project\ACommon\MyFSM\FSMSystem.cs" />
+    <Compile Include="Project\ACommon\ScrollSelector.cs" />
+    <Compile Include="Project\ACommon\TableView.cs" />
+    <Compile Include="Project\ACommon\Tools.cs" />
+    <Compile Include="Project\ACommon\MyMsg\MsgCenter.cs" />
+    <Compile Include="Project\ACommon\MyMsg\MsgCode.cs" />
+    <Compile Include="Project\ACommon\NetMgr.cs" />
+    <Compile Include="Project\ACommon\GameInit.cs" />
+    <Compile Include="Project\ACommon\MyUI\BasePanel.cs" />
+    <Compile Include="Project\ACommon\MyUI\E_GamePanel.cs" />
+    <Compile Include="Project\ACommon\MyUI\E_UIInit.cs" />
+    <Compile Include="Project\ACommon\MyUI\E_StartPanel.cs" />
+    <Compile Include="Project\ACommon\MyUI\UIMgr.cs" />
+    <Compile Include="Project\ACommon\sound_scan.cs" />
+    <Compile Include="Project\ACommon\TimeMgr.cs" />
+    <Compile Include="Project\ACommon\WebRequestHelper.cs" />
+    <Compile Include="Project\BasePrj\Ctrl\CtrlBAI_QE.cs" />
+    <Compile Include="Project\BasePrj\Ctrl\CtrlBAI_XM.cs" />
+    <Compile Include="Project\BasePrj\Ctrl\CtrlBPlanet.cs" />
+    <Compile Include="Project\BasePrj\Data\DataBActivity.cs" />
+    <Compile Include="Project\BasePrj\Data\DataBFriend.cs" />
+    <Compile Include="Project\BasePrj\Data\DataBHonor.cs" />
+    <Compile Include="Project\BasePrj\Data\DataBHope.cs" />
+    <Compile Include="Project\BasePrj\Data\DataBLoveHome.cs" />
+    <Compile Include="Project\BasePrj\Data\DataBLoveTask.cs" />
+    <Compile Include="Project\BasePrj\Data\DataBLuck.cs" />
+    <Compile Include="Project\BasePrj\Data\DataBMainHome.cs" />
+    <Compile Include="Project\BasePrj\Data\DataBNative.cs" />
+    <Compile Include="Project\BasePrj\Data\DataBProject.cs" />
+    <Compile Include="Project\BasePrj\Data\DataBShop.cs" />
+    <Compile Include="Project\BasePrj\Data\DataBUpdataData.cs" />
+    <Compile Include="Project\BasePrj\Data\DataTest.cs" />
+    <Compile Include="Project\BasePrj\Data\GameData.cs" />
+    <Compile Include="Project\BasePrj\UI\CommonMediaPlayer.cs" />
+    <Compile Include="Project\BasePrj\UI\CommonPopWinPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\CommonTipPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\CommonVideoPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\FriendPageBase.cs" />
+    <Compile Include="Project\BasePrj\UI\ShowPop.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBBlackListItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBActivityPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBBlackListPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendListPage.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBRedPackagePanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIEditorSelectorWin.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBDonateDetailBgItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBBigImgPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBDonateDetailDonatePanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBDonateDetailPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBDonateDetailProgressItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBDonateHomeItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBDonateHomePanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBDonateResultPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendChatItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendDataEditorPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendEditorNotePanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendChatPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendExplorePage.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendExpolerItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendFocusItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendFocusListPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendHomeMyPage.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendHomePanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendMatchItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendMatchPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBFriendProfilePanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBGameHomePanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBGetRewardPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBHonorHomePanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBHonorLockPage.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBHonorMadelItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBHonorRankItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBHonorRecordItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBHonorUnLockPage.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBLoveWindowPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBMainBagItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBMainBagItemDetial.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBMainBagPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBMainHomePanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBMainBeginnerGuidePanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBLoveTaskItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBLoveTaskPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBLoveHomePanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBLoveTaskSignIn.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBLuckyRotatePanel.cs" />
+    <Compile Include="Project\BasePrj\UI\CommonNetErrorPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBSetImg.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBShopDescPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBShopItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBShopPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBShopReallyDescPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBShopRecordItem.cs" />
+    <Compile Include="Project\BasePrj\UI\UIBShopRecordPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UILoadingPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UILoginPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\UISettingPanel.cs" />
+    <Compile Include="Project\BasePrj\UI\CommonVideoController.cs" />
+    <Compile Include="Project\GameA\Data\DataGameA.cs" />
+    <Compile Include="Project\GameA\Fruit.cs" />
+    <Compile Include="Project\GameA\GameA.cs" />
+    <Compile Include="Project\GameA\UI\UIGameAStartPanel.cs" />
+    <Compile Include="Project\GameA\UI\UILeaderBorderPanel.cs" />
+    <Compile Include="Project\GameA\UI\UILeaderBorderPanelItem.cs" />
+    <Compile Include="Project\GameB\Block.cs" />
+    <Compile Include="Project\GameB\BlockSpawner.cs" />
+    <Compile Include="Project\GameB\CameraManager.cs" />
+    <Compile Include="Project\GameB\PlayerController.cs" />
+    <Compile Include="Project\GameB\Data\GameBData.cs" />
+    <Compile Include="Project\GameB\GameBManager.cs" />
+    <Compile Include="Project\GameB\UI\RankingItem.cs" />
+    <Compile Include="Project\GameB\UI\UIBUnLockProgressPanel.cs" />
+    <Compile Include="Project\GameB\UI\UIGameBRankingPanel.cs" />
+    <Compile Include="Project\GameB\UI\UIGameBStartPanel.cs" />
+    <Compile Include="Project\GameB\UI\UIGameBThemePanel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AVProVideo.Runtime">
+      <HintPath>..\Library\ScriptAssemblies\AVProVideo.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="BestHTTP">
+      <HintPath>..\Library\ScriptAssemblies\BestHTTP.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>..\Assets\Dependencies\DOTween\DOTween.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files\UnityVersions\2019.4.36f1c1\Editor\Data\PlaybackEngines\iOSSupport\Variations\il2cpp\Developmentx64_managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\..\..\..\Program Files\UnityVersions\2019.4.36f1c1\Editor\Data\PlaybackEngines\iOSSupport\Variations\il2cpp\Managed\UnityEngine.AnimationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\..\..\..\Program Files\UnityVersions\2019.4.36f1c1\Editor\Data\PlaybackEngines\iOSSupport\Variations\il2cpp\Managed\UnityEngine.AudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\..\..\Program Files\UnityVersions\2019.4.36f1c1\Editor\Data\PlaybackEngines\iOSSupport\Variations\il2cpp\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\..\..\..\..\Program Files\UnityVersions\2019.4.36f1c1\Editor\Data\PlaybackEngines\iOSSupport\Variations\il2cpp\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\..\..\..\..\Program Files\UnityVersions\2019.4.36f1c1\Editor\Data\PlaybackEngines\iOSSupport\Variations\il2cpp\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\..\..\..\Program Files\UnityVersions\2019.4.36f1c1\Editor\Data\PlaybackEngines\iOSSupport\Variations\il2cpp\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\..\Program Files\UnityVersions\2019.4.36f1c1\Editor\Data\PlaybackEngines\iOSSupport\Variations\il2cpp\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\..\..\..\Program Files\UnityVersions\2019.4.36f1c1\Editor\Data\PlaybackEngines\iOSSupport\Variations\il2cpp\Managed\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\Program Files\UnityVersions\2019.4.36f1c1\Editor\Data\PlaybackEngines\iOSSupport\Variations\il2cpp\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\..\..\..\..\Program Files\UnityVersions\2019.4.36f1c1\Editor\Data\PlaybackEngines\iOSSupport\Variations\il2cpp\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>..\..\..\..\..\..\Program Files\UnityVersions\2019.4.36f1c1\Editor\Data\PlaybackEngines\iOSSupport\Variations\il2cpp\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ILRuntime">
+      <HintPath>..\Library\ScriptAssemblies\ILRuntime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>..\..\..\..\..\..\Program Files\UnityVersions\2019.4.36f1c1\Editor\Data\PlaybackEngines\iOSSupport\Variations\il2cpp\Managed\UnityEngine.VideoModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WebSocketSharp">
+      <HintPath>..\Library\ScriptAssemblies\WebSocketSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\Library\ScriptAssemblies\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <StandardHeader IncludeInNewFiles="True" Text="&#xA;${FileName}&#xA; &#xA;Author:&#xA;      ${AuthorName} &lt;${AuthorEmail}&gt;&#xA;&#xA;Copyright (c) ${Year} ${CopyrightHolder}&#xA;&#xA;Permission is hereby granted, free of charge, to any person obtaining a copy&#xA;of this software and associated documentation files (the &quot;Software&quot;), to deal&#xA;in the Software without restriction, including without limitation the rights&#xA;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#xA;copies of the Software, and to permit persons to whom the Software is&#xA;furnished to do so, subject to the following conditions:&#xA;&#xA;The above copyright notice and this permission notice shall be included in&#xA;all copies or substantial portions of the Software.&#xA;&#xA;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#xA;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xA;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#xA;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#xA;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#xA;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN&#xA;THE SOFTWARE." />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

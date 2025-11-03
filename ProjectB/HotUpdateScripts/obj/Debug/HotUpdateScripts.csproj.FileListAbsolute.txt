@@ -1,0 +1,7 @@
+D:\WorkSpace\Unity3D\projectb\ProjectB\HotUpdateScripts\obj\Debug\HotUpdateScripts.dll
+D:\WorkSpace\Unity3D\projectb\ProjectB\HotUpdateScripts\obj\Debug\HotUpdateScripts.pdb
+D:\WorkSpace\Unity3D\projectb\ProjectB\HotUpdateScripts\obj\Debug\HotUpdateScripts.csproj.CoreCompileInputs.cache
+D:\WorkSpace\Unity3D\projectb\ProjectB\Assets\HotUpdateResources\Dll\Hidden~\HotUpdateScripts.dll
+D:\WorkSpace\Unity3D\projectb\ProjectB\Assets\HotUpdateResources\Dll\Hidden~\HotUpdateScripts.pdb
+D:\WorkSpace\Unity3D\projectb\ProjectB\HotUpdateScripts\obj\Debug\HotUpdateScripts.csproj.AssemblyReference.cache
+D:\WorkSpace\Unity3D\projectb\ProjectB\HotUpdateScripts\obj\Debug\HotUpdateScripts.csproj.CopyComplete

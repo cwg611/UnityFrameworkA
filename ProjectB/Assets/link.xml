@@ -1,0 +1,68 @@
+<linker>
+
+  <assembly fullname="Assembly-CSharp" preserve="all" />
+  <assembly fullname="DOTween" preserve="all" />
+  
+  <assembly fullname="BestHTTP" preserve="all"/>
+  <assembly fullname="ILRuntime" preserve="all"/>
+  <assembly fullname="LitJson" preserve="all"/>
+  
+  <assembly fullname="System" preserve="all"/>
+  <assembly fullname="UnityEngine" preserve="all"/>
+
+
+  <assembly fullname="System">
+    <namespace fullname="System.Runtime.InteropServices" preserve="all"/>
+    <namespace fullname="System.Collections.Generic;" preserve="all"/>
+    <namespace fullname="System.Linq;" preserve="all"/>
+    <namespace fullname="System.Text.RegularExpressions;" preserve="all"/>
+    <namespace fullname="System.IO;" preserve="all"/>
+    <namespace fullname="System;" preserve="all"/>
+  </assembly>
+  
+  
+
+	<assembly fullname="UnityEngine.ParticleSystemModule" preserve="all"/>
+  <assembly fullname="UnityEngine.AnimationModule" preserve="all"/>
+  <assembly fullname="UnityEngine.AudioModule" preserve="all"/>
+  <assembly fullname="UnityEngine.VideoModule" preserve="all"/>
+  <assembly fullname="UnityEngine.UnityWebRequestModule" preserve="all"/>
+  <assembly fullname="UnityEngine.UnityWebRequestTextureModule" preserve="all"/>
+  <assembly fullname="UnityEngine.TextRenderingModule" preserve="all"/>
+  <assembly fullname="UnityEngine.CoreModule" preserve="all"/>
+  <assembly fullname="UnityEngine.InputLegacyModule" preserve="all"/>
+  
+
+
+  <assembly fullname="UnityEngine">
+    <type fullname="UnityEngine.Collider" preserve="all"/>
+    <type fullname="UnityEngine.BoxCollider" preserve="all"/>
+    <type fullname="UnityEngine.Collider2D" preserve="all"/>
+    <type fullname="UnityEngine.Animator" preserve="all"/>
+    <type fullname="UnityEngine.Physics" preserve="all"/>
+    <type fullname="UnityEngine.Physics2D" preserve="all"/>
+    <type fullname="UnityEngine.Sprite" preserve="all"/>    
+    <type fullname="UnityEngine.Texture2D" preserve="all"/>
+    <type fullname="UnityEngine.Networking" preserve="all"/>
+    <type fullname="UnityEngine.Networking.UnityWebRequest" preserve="all"/>
+
+    <type fullname="UnityEngine.Transform" preserve="all"/>
+    <type fullname="UnityEngine.SpriteRenderer" preserve="all"/>
+    <type fullname="UnityEngine.Rigidbody2D" preserve="all"/>
+    <type fullname="UnityEngine.CircleCollider2D" preserve="all"/>
+    <type fullname="UnityEngine.BoxCollider2D" preserve="all"/>
+    <type fullname="UnityEngine.MeshFilter" preserve="all"/>
+    <type fullname="UnityEngine.MeshRenderer" preserve="all"/>
+    <type fullname="UnityEngine.EdgeCollider2D" preserve="all"/>
+    
+    <type fullname="UnityEngine.Rigidbody" preserve="all"/>
+    <type fullname="UnityEngine.Rigidbody.AddForce" preserve="all"/>
+    <type fullname="UnityEngine.ForceMode" preserve="all"/>
+    <type fullname="UnityEngine.Collision" preserve="all"/>
+  </assembly>
+ 
+
+
+
+
+</linker>
